@@ -19,6 +19,7 @@ class Introduction extends Component {
     return (
       <div class = "Section">
         <h1 class = "Header-text">An Introduction</h1>
+        <p>This is a test</p>
       </div>
     );
   }
