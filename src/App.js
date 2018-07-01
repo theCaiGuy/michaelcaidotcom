@@ -7,8 +7,8 @@ class Welcome extends Component {
     return (
       <div class = "Welcome-page">
         <h1 class = "Top-text">Michael Cai</h1>
-        <img class = "Round-image" src = { require('./Photos/me.jpg') } width = "400" height = "400"/>
-        <p class = "Top-infotext">CS Major @ Stanford University</p>
+        <img class = "Round-image" src = { require('./Photos/me.jpg') }/>
+        <p class = "Top-infotext">CS Major | Stanford University class of 2020</p>
       </div>
     );
   }
@@ -18,8 +18,17 @@ class Introduction extends Component {
   render() {
     return (
       <div class = "Section">
-        <h1 class = "Header-text">An Introduction</h1>
-        <p>This is a test</p>
+        <div class = "Introduction">
+          <h1 class = "Header-text">Who am I?</h1>
+          <p class = "Introduction-text">
+            As a Computer Science undergrad at Stanford University,
+            I have had the priviledge of studying under the best and brightest minds
+            in the field. With a concentration in Artificial Intelligence, I am learning
+            how to write programs that are smarter, faster, and more reliable. Ultimately, my
+            goal is to use these tools to challenge the status quo, disrupt the way that things
+            have always been done, and make the world a better place.
+          </p>
+        </div>
       </div>
     );
   }

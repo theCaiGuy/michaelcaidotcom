@@ -1,7 +1,9 @@
 .Section {
   display: inline-block;
   width: 100%;
-  height: 720px;
+  height: auto;
+  text-align: center;
+  align-content: center;
 }
 
 .Welcome-page {
@@ -10,11 +12,14 @@
   z-index: 99999;
   display: inline-block;
   width: 100%;
-  height: 800px;
+  height: 100%;
 }
 
 .Round-image {
   border-radius: 50%;
+  max-width: 75%;
+  height: auto;
+  width: auto\9;
 }
 
 .Top-text {
@@ -30,11 +35,33 @@
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-.Header-text{
+.Header-text {
   text-align: center;
   font-size: 40px;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: normal;
+}
+
+.Introduction {
+  height: 100%;
+  padding: 15px;
+  max-width: 50%;
+  height: auto;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: justify;
+  text-align-last: center;
+  /* background-color: #e6e6e6; */
+  /* border: 5px solid #ED213A;
+  border-radius: 25px; */
+}
+
+.Introduction-text {
+  font-size:25px;
+  color: #676767;
 }
 
 .Footer{
