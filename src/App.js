@@ -51,7 +51,7 @@ class Footer extends Component {
     return (
       <div class = "Footer">
         <p class = "Footer-text">
-          This website was built using React.js by Michael Cai in Summer 2018.
+          This website was built using React.js in Summer 2018.
           The source code for this site is available <a href = "https://github.com/theCaiGuy/michaelcaidotcom">here</a>.
         </p>
       </div>
