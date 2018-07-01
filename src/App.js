@@ -46,6 +46,19 @@ class Contact extends Component {
   }
 }
 
+class Footer extends Component {
+  render() {
+    return (
+      <div class = "Footer">
+        <p class = "Footer-text">
+          This website was built using React.js by Michael Cai in Summer 2018.
+          The source code for this site is available <a href = "https://github.com/theCaiGuy/michaelcaidotcom">here</a>.
+        </p>
+      </div>
+    )
+  }
+}
+
 class App extends Component {
   render() {
     return (
@@ -54,6 +67,7 @@ class App extends Component {
         <Introduction/>
         <Qualifications/>
         <Contact/>
+        <Footer/>
       </body>
     );
   }
