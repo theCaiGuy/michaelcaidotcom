@@ -45,13 +45,13 @@ class Qualifications extends Component {
         <div class = "Qualifications">
           <div class = "Work-col">
             <h1 class = "Header-text">Places I've Worked</h1>
-            <img class = "Logo" src = { require('./Photos/boston-scientific-logo.png') }/>
-            <img class = "Logo" src = { require('./Photos/medtronic-logo.jpg') }/>
+            <img class = "Logo" src = { require('./Photos/boston-scientific-logo.png') } alt = 'Boston Scientific'/>
+            <img class = "Logo" src = { require('./Photos/medtronic-logo.jpg') } alt = 'Medtronic'/>
           </div>
           <div class = "Learn-col">
             <h1 class = "Header-text">Places I've Studied</h1>
-            <img class = "Logo" src = { require('./Photos/stanford-logo.png') }/>
-            <img class = "Logo" src = { require('./Photos/whs-logo.png') }/>
+            <img class = "Logo" src = { require('./Photos/stanford-logo.png') } alt = 'Stanford University'/>
+            <img class = "Logo" src = { require('./Photos/whs-logo.png') } alt = 'Wayzata High School'/>
           </div>
         </div>
       </div>
@@ -118,9 +118,9 @@ class Contact extends Component {
               <FontAwesomeIcon icon = {['fab', 'linkedin']} size = '8x' color = 'black'/>
             </a>
           </div>
-          <h1 class = "Header-text">Contact Me</h1>
 
           <div class="container">
+            <h1 class = "Header-text">Contact Me</h1>
             <form action="action_page.php">
 
               <label for="fname">Name</label>
@@ -147,7 +147,7 @@ class Footer extends Component {
     return (
       <div class = "Footer">
         <p class = "Footer-text">
-          This website was built using React.js in Summer 2018.
+          This website was built using React.js in Summer 2018 and deployed using <a href = "https://heroku.com">Heroku</a>.
           The source code for this site is available <a href = "https://github.com/theCaiGuy/michaelcaidotcom">here</a>.
         </p>
       </div>
