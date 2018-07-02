@@ -112,10 +112,10 @@ class Contact extends Component {
           <h1 class = "Header-text">Find Me Online</h1>
           <div>
             <a class = "Findme-btn" href = 'https://github.com/theCaiGuy'>
-              <FontAwesomeIcon icon = {['fab', 'github']} size = '8x' color = 'black'/>
+              <FontAwesomeIcon icon = {['fab', 'github']} size = '8x' color = '#97040E'/>
             </a>
             <a class = "Findme-btn" href = 'https://linkedin.com/in/theCaiGuy'>
-              <FontAwesomeIcon icon = {['fab', 'linkedin']} size = '8x' color = 'black'/>
+              <FontAwesomeIcon icon = {['fab', 'linkedin']} size = '8x' color = '#97040E'/>
             </a>
           </div>
 
