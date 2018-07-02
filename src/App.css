@@ -54,8 +54,7 @@
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 10px;
-    text-align: justify;
-    text-align-last: center;
+    text-align: center;
     /* background-color: #e6e6e6; */
     /* border: 5px solid #ED213A;
     border-radius: 25px; */
@@ -105,6 +104,11 @@
     text-align: center;
   }
 
+  .Small-infotext {
+    color: #676767;
+    font-size: 15px;
+  }
+
   .Project-info-container {
     height: auto;
     margin-top: auto;
@@ -112,8 +116,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 90%;
-    text-align: justify;
-    text-align-last: center;
+    text-align: center;
   }
 
   .Contact {
@@ -225,6 +228,11 @@
     width: 45%;
     float: right;
     text-align: center;
+  }
+
+  .Small-infotext {
+    color: #676767;
+    font-size: 25px;
   }
 
   .Project-logo-container {
