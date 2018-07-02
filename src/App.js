@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+
+library.add(fab)
 
 class Welcome extends Component {
   render() {
@@ -18,7 +23,7 @@ class Introduction extends Component {
     return (
       <div class = "Section">
         <div class = "Introduction">
-          <h1 class = "Header-text">Who am I?</h1>
+          <h1 class = "Header-text">Introduction</h1>
           <p class = "Introduction-text">
             As a Computer Science undergrad at Stanford University,
             I have had the priviledge of studying under the best and brightest minds
@@ -37,8 +42,14 @@ class Qualifications extends Component {
   render() {
     return (
       <div class = "Section">
-        <h1 class = "Header-text">Places I've Learned</h1>
-        <h1 class = "Header-text">Places I've Worked</h1>
+        <div class = "Qualifications">
+          <div class = "Work-col">
+            <h1 class = "Header-text">Places I've Worked</h1>
+          </div>
+          <div class = "Learn-col">
+            <h1 class = "Header-text">Places I've Learned</h1>
+          </div>
+        </div>
       </div>
     );
   }
@@ -50,6 +61,14 @@ class Contact extends Component {
       <div class = "Section">
         <h1 class = "Header-text">Contact Me</h1>
         <h1 class = "Header-text">Find Me Online</h1>
+        <div>
+          <a class = "Findme-btn" href = 'https://github.com/theCaiGuy'>
+            <FontAwesomeIcon icon = {['fab', 'github']} size = '8x' color = 'black'/>
+          </a>
+          <a class = "Findme-btn" href = 'https://linkedin.com/in/theCaiGuy'>
+            <FontAwesomeIcon icon = {['fab', 'linkedin']} size = '8x' color = 'black'/>
+          </a>
+        </div>
       </div>
     );
   }
