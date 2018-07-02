@@ -74,7 +74,7 @@
     width: auto;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .Work-col {
@@ -95,9 +95,30 @@
     text-align: center;
   }
 
+  .Project-logo-container {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 90%;
+    text-align: center;
+  }
+
+  .Project-info-container {
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    text-align: justify;
+    text-align-last: center;
+  }
+
   .Contact {
     height: 100%;
-    padding: 15px;
+    /* padding: 15px; */
     max-width: 90%;
     height: auto;
     width: auto;
@@ -206,9 +227,31 @@
     text-align: center;
   }
 
+  .Project-logo-container {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 15%;
+    float: left;
+    text-align: center;
+  }
+
+  .Project-info-container {
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    float: right;
+    text-align: justify;
+  }
+
   .Contact {
     height: 100%;
-    padding: 15px;
+    /* padding: 15px; */
     max-width: 60%;
     height: auto;
     width: auto;
@@ -222,6 +265,26 @@
   max-width: 90%;
   width: auto;
   height: auto;
+}
+
+.Small-infotext {
+  color: #676767;
+  font-size: 25px;
+}
+
+.Project-logo {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  border: 5px solid #676767;
+  border-radius: 50%;
+}
+
+.Project-info {
+  display: inline-block;
+  height: auto;
+  width: 100%;
+  margin-top: 5px;
 }
 
 .Findme-btn {
