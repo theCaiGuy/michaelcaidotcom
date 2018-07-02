@@ -39,7 +39,7 @@
 
   .Header-text {
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: normal;
   }
@@ -62,7 +62,7 @@
   }
 
   .Introduction-text {
-    font-size:20px;
+    font-size:18px;
     color: #676767;
   }
 
@@ -74,7 +74,7 @@
     width: auto;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
 
   .Work-col {
@@ -83,6 +83,17 @@
 
   .Learn-col {
     width: 90%;
+  }
+
+  .Contact {
+    height: 100%;
+    padding: 15px;
+    max-width: 90%;
+    height: auto;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
   }
 }
 
@@ -109,7 +120,7 @@
     border-radius: 50%;
     max-width: 75%;
     height: auto;
-    width: auto\9;
+    width: auto;
   }
 
   .Top-text {
@@ -134,14 +145,13 @@
 
   .Introduction {
     height: 100%;
-    padding: 15px;
+    padding: 10px;
     max-width: 60%;
     height: auto;
     width: auto;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    margin-bottom: 10px;
     text-align: justify;
     text-align-last: center;
 
@@ -163,7 +173,7 @@
     width: auto;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   .Work-col {
@@ -175,6 +185,23 @@
     width: 45%;
     float: right;
   }
+
+  .Contact {
+    height: 100%;
+    padding: 15px;
+    max-width: 60%;
+    height: auto;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+}
+
+.Logo {
+  max-width: 90%;
+  width: auto;
+  height: auto;
 }
 
 .Findme-btn {
@@ -189,7 +216,7 @@
 }
 
 .Footer-text {
-  color: gray;
+  color: #676767;
   font-size: 15px
 }
 
@@ -200,7 +227,41 @@ body {
   padding: 0px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+input[type=text], textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    font-size: 20px;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #ED213A;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+textarea {
+  height: 200px;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    padding: 10px;
+    text-align: left;
+    font-size: 20px;
 }

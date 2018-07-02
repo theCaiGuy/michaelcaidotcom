@@ -45,9 +45,13 @@ class Qualifications extends Component {
         <div class = "Qualifications">
           <div class = "Work-col">
             <h1 class = "Header-text">Places I've Worked</h1>
+            <img class = "Logo" src = { require('./Photos/boston-scientific-logo.png') }/>
+            <img class = "Logo" src = { require('./Photos/medtronic-logo.jpg') }/>
           </div>
           <div class = "Learn-col">
             <h1 class = "Header-text">Places I've Learned</h1>
+            <img class = "Logo" src = { require('./Photos/stanford-logo.png') }/>
+            <img class = "Logo" src = { require('./Photos/whs-logo.png') }/>
           </div>
         </div>
       </div>
@@ -55,19 +59,47 @@ class Qualifications extends Component {
   }
 }
 
+class Projects extends Component {
+  render() {
+    return (
+      <div class = "Section">
+        <h1 class = "Header-text">Projects</h1>
+      </div>
+    )
+  }
+}
+
 class Contact extends Component {
   render() {
     return (
       <div class = "Section">
-        <h1 class = "Header-text">Contact Me</h1>
-        <h1 class = "Header-text">Find Me Online</h1>
-        <div>
-          <a class = "Findme-btn" href = 'https://github.com/theCaiGuy'>
-            <FontAwesomeIcon icon = {['fab', 'github']} size = '8x' color = 'black'/>
-          </a>
-          <a class = "Findme-btn" href = 'https://linkedin.com/in/theCaiGuy'>
-            <FontAwesomeIcon icon = {['fab', 'linkedin']} size = '8x' color = 'black'/>
-          </a>
+        <div class = "Contact">
+          <h1 class = "Header-text">Find Me Online</h1>
+          <div>
+            <a class = "Findme-btn" href = 'https://github.com/theCaiGuy'>
+              <FontAwesomeIcon icon = {['fab', 'github']} size = '8x' color = 'black'/>
+            </a>
+            <a class = "Findme-btn" href = 'https://linkedin.com/in/theCaiGuy'>
+              <FontAwesomeIcon icon = {['fab', 'linkedin']} size = '8x' color = 'black'/>
+            </a>
+          </div>
+          <h1 class = "Header-text">Contact Me</h1>
+          <div class="container">
+            <form action="action_page.php">
+
+              <label for="fname">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name..." />
+
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" placeholder="Your email..." />
+
+              <label for="message">Message</label>
+              <textarea id="subject" name="message" placeholder="Write something..."></textarea>
+
+              <input type="submit" value="Submit" />
+
+            </form>
+          </div>
         </div>
       </div>
     );
@@ -94,6 +126,7 @@ class App extends Component {
         <Welcome/>
         <Introduction/>
         <Qualifications/>
+        <Projects/>
         <Contact/>
         <Footer/>
       </body>
