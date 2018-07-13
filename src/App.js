@@ -104,6 +104,17 @@ class Projects extends Component {
   }
 }
 
+class Knowledge extends Component {
+  render() {
+    return (
+      <div class = "Section">
+        <h1 class = "Header-text">Tools I Have</h1>
+
+      </div>
+    )
+  }
+}
+
 class Contact extends Component {
   render() {
     return (
@@ -163,6 +174,7 @@ class App extends Component {
         <Introduction/>
         <Qualifications/>
         <Projects/>
+        <Knowledge/>
         <Contact/>
         <Footer/>
       </body>
