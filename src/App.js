@@ -11,7 +11,7 @@ class Welcome extends Component {
     return (
       <div class = "Welcome-page">
         <h1 class = "Top-text">Michael Cai</h1>
-        <img class = "Round-image" src = { require('./Photos/me.jpg') }/>
+        <img class = "Round-image" src = { require('./Photos/me.jpg') } alt = 'Me!'/>
         <p class = "Top-infotext">CS Major | Stanford University class of 2020</p>
       </div>
     );
@@ -29,7 +29,7 @@ class Introduction extends Component {
             I have had the priviledge of studying under the best and brightest minds
             in the field. With my concentration in Artificial Intelligence, I am learning
             how to write programs that are smarter, faster, and more reliable. Ultimately, my
-            goal is to use these tools to challenge the status quo, disrupt the way that things
+            goal is to use my knowledge to challenge the status quo, disrupt the way that things
             have always been done, and make the world a better place.
           </p>
         </div>
@@ -54,6 +54,7 @@ class Qualifications extends Component {
             <img class = "Logo" src = { require('./Photos/whs-logo.png') } alt = 'Wayzata High School'/>
           </div>
         </div>
+        <div></div>
       </div>
     );
   }
@@ -68,7 +69,7 @@ class Projects extends Component {
 
           <div class = "Project-info">
             <div class = "Project-logo-container">
-              <a href = "https://github.com/theCaiGuy/CS227B_GGP"><img class = "Project-logo" src = { require('./Photos/GGP-logo.png')} /></a>
+              <a href = "https://github.com/theCaiGuy/CS227B_GGP"><img class = "Project-logo" src = { require('./Photos/GGP-logo.png')} alt = 'GGP'/></a>
             </div>
             <div class = "Project-info-container">
               <p class = "Small-infotext">
@@ -80,7 +81,7 @@ class Projects extends Component {
 
           <div class = "Project-info">
             <div class = "Project-logo-container">
-              <a href = "https://cs110.stanford.edu"><img class = "Project-logo" src = { require('./Photos/cs110-logo.png')} /></a>
+              <a href = "https://cs110.stanford.edu"><img class = "Project-logo" src = { require('./Photos/cs110-logo.png')} alt = 'CS110' /></a>
             </div>
             <div class = "Project-info-container">
               <p class = "Small-infotext">RSS News Feed (CS110): Implemented a thread pool for efficient retrieval of
@@ -90,7 +91,7 @@ class Projects extends Component {
 
           <div class = "Project-info">
             <div class = "Project-logo-container">
-              <a href = "https://github.com/theCaiGuy/ChartzBot"><img class = "Project-logo" src = { require('./Photos/altozbot-logo.jpeg')} /></a>
+              <a href = "https://github.com/theCaiGuy/ChartzBot"><img class = "Project-logo" src = { require('./Photos/altozbot-logo.jpeg')} alt = 'Chartzbot'/></a>
             </div>
             <div class = "Project-info-container">
               <p class = "Small-infotext">LSJUMB Chartzbot (Independent): Built a GroupMe bot that uses NLP techniques to
@@ -99,6 +100,7 @@ class Projects extends Component {
           </div>
 
         </div>
+        <div></div>
       </div>
     )
   }
@@ -109,7 +111,20 @@ class Knowledge extends Component {
     return (
       <div class = "Section">
         <h1 class = "Header-text">Tools I Have</h1>
-
+        <div class = "Tools">
+          <div class = "Lang-col">
+            <img class = "Tool-logo" src = { require('./Photos/Python.png') } alt = 'Python'/>
+            <img class = "Tool-logo" src = { require('./Photos/javascript.png') } alt = 'Javascript'/>
+            <img class = "Tool-logo" src = { require('./Photos/java.png') } alt = 'Java'/>
+            <img class = "Tool-logo" src = { require('./Photos/cpp_logo.png') } alt = 'C++'/>
+          </div>
+          <div class = "Skills-col">
+            <img class = "Tool-logo" src = { require('./Photos/React Native.png') } alt = 'React and React Native'/>
+            <img class = "Tool-logo" src = { require('./Photos/AWS.png') } alt = 'Amazon Web Services'/>
+            <img class = "Tool-logo" src = { require('./Photos/appium.png') } alt = 'Appium'/>
+            <img class = "Tool-logo" src = { require('./Photos/Jenkins.png') } alt = 'Jenkins'/>
+          </div>
+        </div>
       </div>
     )
   }

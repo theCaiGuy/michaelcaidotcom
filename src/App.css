@@ -63,6 +63,7 @@
   .Introduction-text {
     font-size: 20px;
     color: #97040E;
+    line-height: 1.15;
   }
 
   .Qualifications {
@@ -73,7 +74,6 @@
     width: auto;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10px;
   }
 
   .Work-col {
@@ -119,9 +119,44 @@
     text-align: center;
   }
 
+  .Tools {
+    height: 100%;
+    padding: 15px;
+    max-width: 90%;
+    height: auto;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+
+  .Lang-col {
+    height: auto;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    text-align: center;
+  }
+
+  .Skills-col {
+    height: auto;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    text-align: center;
+  }
+
+  .Tool-logo {
+    max-width: 45%;
+    width: auto;
+    height: auto;
+  }
+
   .Contact {
     height: 100%;
-    /* padding: 15px; */
+    padding: 15px;
     max-width: 90%;
     height: auto;
     width: auto;
@@ -139,6 +174,7 @@
     height: auto;
     text-align: center;
     align-content: center;
+    margin-top: 10px;
   }
 
   .Welcome-page {
@@ -193,6 +229,7 @@
   .Introduction-text {
     font-size: 30px;
     color: #97040E;
+    line-height: 1.35;
   }
 
   .Qualifications {
@@ -203,7 +240,6 @@
     width: auto;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10px;
   }
 
   .Work-col {
@@ -253,9 +289,40 @@
     text-align: justify;
   }
 
+  .Tools {
+    height: 100%;
+    padding: 15px;
+    max-width: 60%;
+    height: auto;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+
+  .Lang-col {
+    height: auto;
+    width: 49%;
+    float: left;
+    text-align: center;
+  }
+
+  .Skills-col {
+    height: auto;
+    width: 49%;
+    float: right;
+    text-align: center;
+  }
+
+  .Tool-logo {
+    max-width: 25%;
+    width: auto;
+    height: auto;
+  }
+
   .Contact {
     height: 100%;
-    /* padding: 15px; */
+    padding: 15px;
     max-width: 60%;
     height: auto;
     width: auto;
@@ -283,7 +350,6 @@
   display: inline-block;
   height: auto;
   width: 100%;
-  margin-top: 5px;
 }
 
 .Findme-btn {
