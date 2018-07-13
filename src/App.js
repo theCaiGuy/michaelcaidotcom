@@ -110,7 +110,7 @@ class Knowledge extends Component {
   render() {
     return (
       <div class = "Section">
-        <h1 class = "Header-text">Tools I Have</h1>
+        <h1 class = "Header-text">My Toolbox</h1>
         <div class = "Tools">
           <div class = "Lang-col">
             <img class = "Tool-logo" src = { require('./Photos/Python.png') } alt = 'Python'/>
