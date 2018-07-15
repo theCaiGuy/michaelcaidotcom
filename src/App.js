@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 
 import './App.css';
-// import './email_me.php'
+import './email_me.php'
 
 library.add(fab)
 
