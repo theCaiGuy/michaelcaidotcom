@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 
 import './App.css';
-import './email_me.php'
+// import './email_me.php'
 
 library.add(fab)
 
@@ -165,14 +165,14 @@ class Contact extends Component {
             <h1 class = "Header-text">Contact Me</h1>
             <form action="email_me.php" method = "post">
 
-              <label for="fname">Name</label>
-              <input type="text" id="name" name="name" placeholder="Your name..." />
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name..." required/>
 
               <label for="email">Email</label>
-              <input type="text" id="email" name="email" placeholder="Your email..." />
+              <input type="text" id="email" name="email" placeholder="Your email..." required/>
 
               <label for="message">Message</label>
-              <textarea id="subject" name="message" placeholder="Write something..."></textarea>
+              <textarea id="subject" name="message" placeholder="Write something..." required></textarea>
 
               <input type="submit" value="Submit" />
 
@@ -189,7 +189,7 @@ class Footer extends Component {
     return (
       <div class = "Footer">
         <p class = "Footer-text">
-          This website was built using <a href = 'https://reactjs.org/'>React.js</a> in Summer 2018 and deployed using <a href = "https://heroku.com">Heroku</a>.
+          This website was built using <a href = 'https://reactjs.org/'>React.js</a> and deployed using <a href = "https://heroku.com">Heroku</a> in Summer 2018.
           The source code for this site is available <a href = "https://github.com/theCaiGuy/michaelcaidotcom">here</a>.
         </p>
       </div>

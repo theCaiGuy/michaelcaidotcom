@@ -306,14 +306,14 @@
 
   .Tool-col-left {
     height: auto;
-    width: 49%;
+    width: 49.5%;
     float: left;
     text-align: center;
   }
 
   .Tool-col-right {
     height: auto;
-    width: 49%;
+    width: 49.5%;
     float: right;
     text-align: center;
   }
