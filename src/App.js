@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import './App.css';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { fab } from '@fortawesome/free-brands-svg-icons'
+
+import './App.css';
+import './email_me.php'
 
 library.add(fab)
 
@@ -26,11 +28,11 @@ class Introduction extends Component {
           <h1 class = "Header-text">Introduction</h1>
           <p class = "Introduction-text">
             As a Computer Science undergrad at Stanford University,
-            I have had the priviledge of studying under the best and brightest minds
+            I have the priviledge of studying under the best and brightest minds
             in the field. With my concentration in Artificial Intelligence, I am learning
             how to write programs that are smarter, faster, and more reliable. Ultimately, my
-            goal is to use my knowledge to challenge the status quo, disrupt the way that things
-            have always been done, and make the world a better place.
+            goal is to use my knowledge to challenge the status quo, disrupt old ways of doing,
+            and make the world a better place.
           </p>
         </div>
       </div>
@@ -112,15 +114,29 @@ class Knowledge extends Component {
       <div class = "Section">
         <h1 class = "Header-text">My Toolbox</h1>
         <div class = "Tools">
-          <div class = "Lang-col">
+          <div class = "Tool-col-left">
             <img class = "Tool-logo" src = { require('./Photos/Python.png') } alt = 'Python'/>
             <img class = "Tool-logo" src = { require('./Photos/javascript.png') } alt = 'Javascript'/>
             <img class = "Tool-logo" src = { require('./Photos/java.png') } alt = 'Java'/>
             <img class = "Tool-logo" src = { require('./Photos/cpp_logo.png') } alt = 'C++'/>
           </div>
-          <div class = "Skills-col">
+          <div class = "Tool-col-right">
+            <img class = "Tool-logo" src = { require('./Photos/C.png') } alt = 'C'/>
             <img class = "Tool-logo" src = { require('./Photos/React Native.png') } alt = 'React and React Native'/>
+            <img class = "Tool-logo" src = { require('./Photos/nodejs.png') } alt = 'Nodejs'/>
+            <img class = "Tool-logo" src = { require('./Photos/Angular.png') } alt = 'Angularjs'/>
+          </div>
+        </div>
+        <div class = "Tools">
+          <div class = "Tool-col-left">
+            <img class = "Tool-logo" src = { require('./Photos/html.png') } alt = 'HTML'/>
+            <img class = "Tool-logo" src = { require('./Photos/Arduino.jpg') } alt = 'Arduino'/>
+            <img class = "Tool-logo" src = { require('./Photos/ios.png') } alt = 'iOS'/>
+            <img class = "Tool-logo" src = { require('./Photos/android.png') } alt = 'Android'/>
+          </div>
+          <div class = "Tool-col-right">
             <img class = "Tool-logo" src = { require('./Photos/AWS.png') } alt = 'Amazon Web Services'/>
+            <img class = "Tool-logo" src = { require('./Photos/Sauce Labs.png') } alt = 'Sauce Labs'/>
             <img class = "Tool-logo" src = { require('./Photos/appium.png') } alt = 'Appium'/>
             <img class = "Tool-logo" src = { require('./Photos/Jenkins.png') } alt = 'Jenkins'/>
           </div>
@@ -147,7 +163,7 @@ class Contact extends Component {
 
           <div class="container">
             <h1 class = "Header-text">Contact Me</h1>
-            <form action="action_page.php">
+            <form action="email_me.php" method = "post">
 
               <label for="fname">Name</label>
               <input type="text" id="name" name="name" placeholder="Your name..." />
@@ -173,7 +189,7 @@ class Footer extends Component {
     return (
       <div class = "Footer">
         <p class = "Footer-text">
-          This website was built using React.js in Summer 2018 and deployed using <a href = "https://heroku.com">Heroku</a>.
+          This website was built using <a href = 'https://reactjs.org/'>React.js</a> in Summer 2018 and deployed using <a href = "https://heroku.com">Heroku</a>.
           The source code for this site is available <a href = "https://github.com/theCaiGuy/michaelcaidotcom">here</a>.
         </p>
       </div>
