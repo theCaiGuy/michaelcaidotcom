@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 
 import './App.css';
-import './email_me.php'
 
 library.add(fab)
 
@@ -173,6 +172,9 @@ class Contact extends Component {
 
               <label for="message">Message</label>
               <textarea id="subject" name="message" placeholder="Write something..." required></textarea>
+
+              <label>What is 2+2? (Anti-spam)</label>
+              <input type="text" name="human" placeholder="Type Here" required/>
 
               <input type="submit" value="Submit" />
 
