@@ -74,8 +74,8 @@ class Projects extends Component {
             </div>
             <div class = "Project-info-container">
               <p class = "Small-infotext">
-                General Game Player (CS227B): Team project where we taught a computer how to play board games utilizing
-                Monte Carlo Tree Search techniques
+                General Game Player (CS227B, Java):
+                Team project where we utilized Monte Carlo Tree Search and Minimax techniques to teach a computer how to play any board game with no prior knowledge of the rules.
               </p>
             </div>
           </div>
@@ -85,7 +85,7 @@ class Projects extends Component {
               <a href = "https://cs110.stanford.edu"><img class = "Project-logo" src = { require('./Photos/cs110-logo.png')} alt = 'CS110' /></a>
             </div>
             <div class = "Project-info-container">
-              <p class = "Small-infotext">RSS News Feed (CS110): Implemented a thread pool for efficient retrieval of
+              <p class = "Small-infotext">RSS News Feed (CS110, C++): Implemented a thread pool for efficient retrieval of
               news articles from online sources</p>
             </div>
           </div>
@@ -95,8 +95,8 @@ class Projects extends Component {
               <a href = "https://github.com/theCaiGuy/ChartzBot"><img class = "Project-logo" src = { require('./Photos/altozbot-logo.jpeg')} alt = 'Chartzbot'/></a>
             </div>
             <div class = "Project-info-container">
-              <p class = "Small-infotext">LSJUMB Chartzbot (Independent): Built a GroupMe bot that uses NLP techniques to
-              find and deliver music charts on command</p>
+              <p class = "Small-infotext">LSJUMB Chartzbot (Independent, Node.js):
+                Built a GroupMe chat bot that uses NLP techniques to act on text commands to deliver music charts to my section’s group chat.</p>
             </div>
           </div>
 
@@ -146,12 +146,12 @@ class Knowledge extends Component {
 }
 
 class Contact extends Component {
-  // constructor(props) {
-  //   super(props)
-  //   this.state = {
-  //     formspree: process.env.FORMSPREE
-  //   }
-  // }
+  constructor(props) {
+    super(props)
+    this.state = {
+      formspree: "https://formspree.io/mcai88@stanford.edu"
+    }
+  }
 
   render() {
     return (
@@ -169,7 +169,7 @@ class Contact extends Component {
 
           <div class="container">
             <h1 class = "Header-text">Contact Me</h1>
-            <form action = {process.env.FORMSPREE} method = "post">
+            <form action = {this.state.formspree} method = "post">
 
               <label for="name">Name</label>
               <input type="text" id="name" name="name" placeholder="Your name..." required/>
