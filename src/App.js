@@ -149,7 +149,7 @@ class Contact extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      formspree: "https://formspree.io/mcai88@stanford.edu"
+      formspree: process.env.FORMSPREE
     }
   }
 
