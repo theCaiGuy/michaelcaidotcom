@@ -146,6 +146,13 @@ class Knowledge extends Component {
 }
 
 class Contact extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      formspree: "https://formspree.io/mcai88@stanford.edu"
+    }
+  }
+
   render() {
     return (
       <div class = "Section">
@@ -162,7 +169,7 @@ class Contact extends Component {
 
           <div class="container">
             <h1 class = "Header-text">Contact Me</h1>
-            <form action="email_me.php" method = "post">
+            <form action= {this.state.formspree} method = "post">
 
               <label for="name">Name</label>
               <input type="text" id="name" name="name" placeholder="Your name..." required/>
