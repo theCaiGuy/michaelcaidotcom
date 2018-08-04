@@ -13,7 +13,7 @@ class Welcome extends Component {
       <div class = "Welcome-page">
         <h1 class = "Top-text">Michael Cai</h1>
         <img class = "Round-image" src = { require('./Photos/me.jpg') } alt = 'Me!'/>
-        <p class = "Top-infotext">CS Major | Stanford University class of 2020</p>
+        <p class = "Top-infotext">Stanford Computer Science | Class of 2020</p>
       </div>
     );
   }
