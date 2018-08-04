@@ -146,12 +146,12 @@ class Knowledge extends Component {
 }
 
 class Contact extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      formspree: process.env.FORMSPREE
-    }
-  }
+  // constructor(props) {
+  //   super(props)
+  //   this.state = {
+  //     formspree: process.env.FORMSPREE
+  //   }
+  // }
 
   render() {
     return (
@@ -169,7 +169,7 @@ class Contact extends Component {
 
           <div class="container">
             <h1 class = "Header-text">Contact Me</h1>
-            <form action= {this.state.formspree} method = "post">
+            <form action = {process.env.FORMSPREE} method = "post">
 
               <label for="name">Name</label>
               <input type="text" id="name" name="name" placeholder="Your name..." required/>
