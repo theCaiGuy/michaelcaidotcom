@@ -74,8 +74,8 @@ class Projects extends Component {
             </div>
             <div class = "Project-info-container">
               <p class = "Small-infotext">
-                General Game Player (CS227B, Java):
-                Team project where we utilized Monte Carlo Tree Search and Minimax techniques to teach a computer how to play any board game with no prior knowledge of the rules.
+                General Game Player (Java):
+                Utilized Monte Carlo Tree Search and Minimax techniques to teach a computer how to play any board game with no prior knowledge of the rules.
               </p>
             </div>
           </div>
@@ -85,8 +85,10 @@ class Projects extends Component {
               <a href = "https://cs110.stanford.edu"><img class = "Project-logo" src = { require('./Photos/cs110-logo.png')} alt = 'CS110' /></a>
             </div>
             <div class = "Project-info-container">
-              <p class = "Small-infotext">RSS News Feed (CS110, C++): Implemented a thread pool for efficient retrieval of
-              news articles from online sources</p>
+              <p class = "Small-infotext">
+                RSS News Feed (C++):
+                Implemented a thread pool for efficient retrieval of news articles from online sources.
+              </p>
             </div>
           </div>
 
@@ -95,8 +97,10 @@ class Projects extends Component {
               <a href = "https://github.com/theCaiGuy/ChartzBot"><img class = "Project-logo" src = { require('./Photos/altozbot-logo.jpeg')} alt = 'Chartzbot'/></a>
             </div>
             <div class = "Project-info-container">
-              <p class = "Small-infotext">LSJUMB Chartzbot (Independent, Node.js):
-                Built a GroupMe chat bot that uses NLP techniques to act on text commands to deliver music charts to my section’s group chat.</p>
+              <p class = "Small-infotext">
+                LSJUMB Chartzbot (Node.js):
+                Built a GroupMe chat bot that uses NLP techniques to act on text commands to deliver music charts to the Stanford Band’s group chat.
+              </p>
             </div>
           </div>
 
