@@ -27,7 +27,7 @@ class Introduction extends Component {
           <h1 class = "Header-text">Introduction</h1>
           <p class = "Introduction-text">
             As a Computer Science undergrad at Stanford University,
-            I have the priviledge of studying under the best and brightest minds
+            I have the privilege of studying under the best and brightest minds
             in the field. With my concentration in Artificial Intelligence, I am learning
             how to write programs that are smarter, faster, and more reliable. Ultimately, my
             goal is to use my knowledge to challenge the status quo, disrupt old ways of doing,
