@@ -207,6 +207,18 @@ class Footer extends Component {
   }
 }
 
+class Subfooter extends Component {
+  render(){
+    return (
+      <div class = "Footer">
+        <p class = "Footer-text">
+          This is a subfooter
+        </p>
+      </div>
+    )
+  }
+}
+
 class App extends Component {
   render() {
     return (
