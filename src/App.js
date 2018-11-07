@@ -230,6 +230,7 @@ class App extends Component {
         <Knowledge/>
         <Contact/>
         <Footer/>
+        <Subfooter/>
       </body>
     );
   }
