@@ -46,6 +46,7 @@ class Qualifications extends Component {
         <div class = "Qualifications">
           <div class = "Work-col">
             <h1 class = "Header-text">Places I've Worked</h1>
+            <img class = "Logo" src = { require('./Photos/CivicFeed.png') } alt = 'CivicFeed'/>
             <img class = "Logo" src = { require('./Photos/boston-scientific-logo.png') } alt = 'Boston Scientific'/>
             <img class = "Logo" src = { require('./Photos/medtronic-logo.jpg') } alt = 'Medtronic'/>
           </div>
@@ -70,24 +71,36 @@ class Projects extends Component {
 
           <div class = "Project-info">
             <div class = "Project-logo-container">
-              <a href = "https://github.com/theCaiGuy/CS227B_GGP"><img class = "Project-logo" src = { require('./Photos/GGP-logo.png')} alt = 'GGP'/></a>
+              <a href = "https://stanfordasl.github.io/aa274/"><img class = "Project-logo" src = { require('./Photos/turtlebot.png')} alt = 'turtlebot'/></a>
             </div>
             <div class = "Project-info-container">
               <p class = "Small-infotext">
-                General Game Player (Java):
-                Utilized Monte Carlo Tree Search and Minimax techniques to teach a computer how to play any board game with no prior knowledge of the rules.
+                <strong>Autonomous Turtlebot: </strong>
+                Implemented fully autonomous computer vision, motion planning, exploration, and finite state control using the ROS framework for a LIDAR equipped delivery bot. My team was one of five selected to present to a panel of industry experts.
               </p>
             </div>
           </div>
 
           <div class = "Project-info">
             <div class = "Project-logo-container">
-              <a href = "https://cs110.stanford.edu"><img class = "Project-logo" src = { require('./Photos/cs110-logo.png')} alt = 'CS110' /></a>
+              <a href = "https://github.com/theCaiGuy/Twitter-Sentiment"><img class = "Project-logo" src = { require('./Photos/twitter.jpg')} alt = 'Twitter'/></a>
             </div>
             <div class = "Project-info-container">
               <p class = "Small-infotext">
-                RSS News Feed (C++):
-                Implemented a thread pool for efficient retrieval of news articles from online sources.
+                <strong>Twitter Sentiment Classifier: </strong>
+                Built a PyTorch CNN sentiment classifier based a paper published by Facebook AI. Trained the classifier on the Sentiment140 dataset using a CUDA GPU to classify Tweets.
+              </p>
+            </div>
+          </div>
+
+          <div class = "Project-info">
+            <div class = "Project-logo-container">
+              <a href = "https://github.com/theCaiGuy/CS227B_GGP"><img class = "Project-logo" src = { require('./Photos/GGP-logo.png')} alt = 'GGP'/></a>
+            </div>
+            <div class = "Project-info-container">
+              <p class = "Small-infotext">
+                <strong>General Game Player: </strong>
+                Utilized Monte Carlo Tree Search and Minimax techniques to teach a computer how to play any board game with no prior knowledge of the rules.
               </p>
             </div>
           </div>
@@ -98,7 +111,7 @@ class Projects extends Component {
             </div>
             <div class = "Project-info-container">
               <p class = "Small-infotext">
-                LSJUMB Chartzbot (Node.js):
+                <strong>LSJUMB Chartzbot: </strong>
                 Built a GroupMe chat bot that uses NLP techniques to act on text commands to deliver music charts to the Stanford Band’s group chat.
               </p>
             </div>
@@ -118,30 +131,30 @@ class Knowledge extends Component {
         <h1 class = "Header-text">My Toolbox</h1>
         <div class = "Tools">
           <div class = "Tool-col-left">
+            <img class = "Tool-logo" src = { require('./Photos/Pytorch.jpg') } alt = 'PyTorch'/>
+            <img class = "Tool-logo" src = { require('./Photos/ros.png') } alt = 'ROS'/>
+            <img class = "Tool-logo" src = { require('./Photos/tensorflow.png') } alt = 'TensorFlow'/>
             <img class = "Tool-logo" src = { require('./Photos/Python.png') } alt = 'Python'/>
-            <img class = "Tool-logo" src = { require('./Photos/javascript.png') } alt = 'Javascript'/>
-            <img class = "Tool-logo" src = { require('./Photos/java.png') } alt = 'Java'/>
-            <img class = "Tool-logo" src = { require('./Photos/cpp_logo.png') } alt = 'C++'/>
           </div>
           <div class = "Tool-col-right">
-            <img class = "Tool-logo" src = { require('./Photos/C.png') } alt = 'C'/>
+            <img class = "Tool-logo" src = { require('./Photos/javascript.png') } alt = 'Javascript'/>
             <img class = "Tool-logo" src = { require('./Photos/React Native.png') } alt = 'React and React Native'/>
-            <img class = "Tool-logo" src = { require('./Photos/nodejs.png') } alt = 'Nodejs'/>
-            <img class = "Tool-logo" src = { require('./Photos/Angular.png') } alt = 'Angularjs'/>
+            <img class = "Tool-logo" src = { require('./Photos/java.png') } alt = 'Java'/>
+            <img class = "Tool-logo" src = { require('./Photos/cpp_logo.png') } alt = 'C++'/>
           </div>
         </div>
         <div class = "Tools">
           <div class = "Tool-col-left">
+            <img class = "Tool-logo" src = { require('./Photos/nodejs.png') } alt = 'Nodejs'/>
             <img class = "Tool-logo" src = { require('./Photos/html.png') } alt = 'HTML'/>
-            <img class = "Tool-logo" src = { require('./Photos/Arduino.jpg') } alt = 'Arduino'/>
-            <img class = "Tool-logo" src = { require('./Photos/ios.png') } alt = 'iOS'/>
-            <img class = "Tool-logo" src = { require('./Photos/android.png') } alt = 'Android'/>
+            <img class = "Tool-logo" src = { require('./Photos/C.png') } alt = 'C'/>
+            <img class = "Tool-logo" src = { require('./Photos/Angular.png') } alt = 'Angularjs'/>
           </div>
           <div class = "Tool-col-right">
             <img class = "Tool-logo" src = { require('./Photos/AWS.png') } alt = 'Amazon Web Services'/>
-            <img class = "Tool-logo" src = { require('./Photos/Sauce Labs.png') } alt = 'Sauce Labs'/>
-            <img class = "Tool-logo" src = { require('./Photos/appium.png') } alt = 'Appium'/>
-            <img class = "Tool-logo" src = { require('./Photos/Jenkins.png') } alt = 'Jenkins'/>
+            <img class = "Tool-logo" src = { require('./Photos/Arduino.jpg') } alt = 'Arduino'/>
+            <img class = "Tool-logo" src = { require('./Photos/ios.png') } alt = 'iOS'/>
+            <img class = "Tool-logo" src = { require('./Photos/android.png') } alt = 'Android'/>
           </div>
         </div>
       </div>
