@@ -29,12 +29,12 @@ class Introduction extends Component {
           <p class = "Introduction-text">
             Four years ago, I was drawn to Silicon Valley by my passion for the future.
             Unsatisfied with the status quo, I yearned for the opportunity to
-            work on the "next big thing". In my work in the field of Machine
-            Learning Engineering, I have earned invaluable experience
-            with the full ML product realization pipeline. As a Computer
+            work on the "next big thing". Since then, as a software engineer specializing
+            in Machine Learning Engineering, I have earned invaluable experience
+            with the full ML product realization pipeline. Meanwhile, as a Computer
             Science undergraduate with a focus in Artificial Intelligence
             at Stanford University, I have the privilege of
-            learning about new ideas from the best and brightest minds in the
+            learning about the newest ideas from the best and brightest minds in the
             field. Ultimately, I hope to use all I have learned to challenge old
             ways of doing to upend the status quo and build a better tomorrow.
           </p>
