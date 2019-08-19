@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import FileIcon, { defaultStyles } from 'react-file-icon'
+import FileIcon from 'react-file-icon'
 
 import './App.css';
 
