@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { fab } from '@fortawesome/free-brands-svg-icons'
+import FileIcon, { defaultStyles } from 'react-file-icon'
 
 import './App.css';
 
@@ -26,34 +27,20 @@ class Introduction extends Component {
         <div class = "Introduction">
           <h1 class = "Header-text">Introduction</h1>
           <p class = "Introduction-text">
-            As a Computer Science undergrad at Stanford University,
-            I have the privilege of studying under the best and brightest minds
-            in the field. With my concentration in Artificial Intelligence, I am learning
-            how to write programs that are smarter, faster, and more reliable. Ultimately, my
-            goal is to use my knowledge to challenge the status quo, disrupt old ways of doing,
-            and make the world a better place.
+            Four years ago, I was drawn to Silicon Valley by my passion for the future.
+            Unsatisfied with the status quo, I yearned for the opportunity to
+            work on the "next big thing". In my work in the field of Machine
+            Learning Engineering, I have earned invaluable experience
+            with the full ML product realization pipeline. As a Computer
+            Science undergraduate with a focus in Artificial Intelligence
+            at Stanford University, I have the privilege of
+            learning about new ideas from the best and brightest minds in the
+            field. Ultimately, I hope to use all I have learned to challenge old
+            ways of doing and build a better tomorrow.
           </p>
         </div>
       </div>
     );
-  }
-}
-
-class Education extends Component {
-  render() {
-    return (
-      <div class = "Section">
-        <div class = "Qualifications">
-          <h1 class = "Header-text">Places I've Studied</h1>
-          <div class = "Work-col">
-            <img class = "Logo" src = { require('./Photos/stanford-logo.png') } alt = 'Stanford University'/>
-          </div>
-          <div class = "Learn-col">
-            <img class = "Logo" src = { require('./Photos/whs-logo.png') } alt = 'Wayzata High School'/>
-          </div>
-        </div>
-      </div>
-    )
   }
 }
 
@@ -75,6 +62,19 @@ class Qualifications extends Component {
         <div></div>
       </div>
     );
+  }
+}
+
+class Education extends Component {
+  render() {
+    return (
+      <div class = "Section">
+        <div class = "Qualifications">
+          <h1 class = "Header-text">My Education</h1>
+          <img class = "Logo" src = { require('./Photos/stanford-logo.png') } alt = 'Stanford University'/>
+        </div>
+      </div>
+    )
   }
 }
 
@@ -159,30 +159,63 @@ class Knowledge extends Component {
         <h1 class = "Header-text">My Toolbox</h1>
         <div class = "Tools">
           <div class = "Tool-col-left">
-            <img class = "Tool-logo" src = { require('./Photos/Python.png') } alt = 'Python'/>
-            <img class = "Tool-logo" src = { require('./Photos/Pytorch.jpg') } alt = 'PyTorch'/>
-            <img class = "Tool-logo" src = { require('./Photos/AWS.png') } alt = 'Amazon Web Services'/>
-            <img class = "Tool-logo" src = { require('./Photos/tensorflow.png') } alt = 'TensorFlow'/>
+            <a href = 'https://www.python.org/'>
+              <img class = "Tool-logo" src = { require('./Photos/Python.png') } alt = 'Python'/>
+            </a>
+            <a href = 'https://aws.amazon.com/'>
+              <img class = "Tool-logo" src = { require('./Photos/AWS.png') } alt = 'Amazon Web Services'/>
+            </a>
+            <a href = 'https://pytorch.org/'>
+              <img class = "Tool-logo" src = { require('./Photos/Pytorch.jpg') } alt = 'PyTorch'/>
+            </a>
+            <a href = 'https://www.tensorflow.org/'>
+              <img class = "Tool-logo" src = { require('./Photos/tensorflow.png') } alt = 'TensorFlow'/>
+            </a>
           </div>
           <div class = "Tool-col-right">
-            <img class = "Tool-logo" src = { require('./Photos/javascript.png') } alt = 'Javascript'/>
-            <img class = "Tool-logo" src = { require('./Photos/React Native.png') } alt = 'React and React Native'/>
-            <img class = "Tool-logo" src = { require('./Photos/java.png') } alt = 'Java'/>
-            <img class = "Tool-logo" src = { require('./Photos/cpp_logo.png') } alt = 'C++'/>
+            <a href = 'https://www.numpy.org/'>
+              <img class = "Tool-logo" src = { require('./Photos/numpy-logo.png')} alt = 'Numpy'/>
+            </a>
+            <a href = 'https://www.ros.org/'>
+              <img class = "Tool-logo" src = { require('./Photos/ros.png') } alt = 'ROS'/>
+            </a>
+            <a href = 'http://www.cplusplus.com/'>
+              <img class = "Tool-logo" src = { require('./Photos/cpp_logo.png') } alt = 'C++'/>
+            </a>
+            <a href = 'https://www.javascript.com/'>
+              <img class = "Tool-logo" src = { require('./Photos/javascript.png') } alt = 'Javascript'/>
+            </a>
           </div>
         </div>
         <div class = "Tools">
           <div class = "Tool-col-left">
-            <img class = "Tool-logo" src = { require('./Photos/nodejs.png') } alt = 'Nodejs'/>
-            <img class = "Tool-logo" src = { require('./Photos/html.png') } alt = 'HTML'/>
-            <img class = "Tool-logo" src = { require('./Photos/C.png') } alt = 'C'/>
-            <img class = "Tool-logo" src = { require('./Photos/ros.png') } alt = 'ROS'/>
+            <a href = 'https://facebook.github.io/react-native/'>
+              <img class = "Tool-logo" src = { require('./Photos/React Native.png') } alt = 'React and React Native'/>
+            </a>
+            <a href = 'https://nodejs.org/en/'>
+              <img class = "Tool-logo" src = { require('./Photos/nodejs.png') } alt = 'Nodejs'/>
+            </a>
+            <a href = 'https://www.w3schools.com/html/html_intro.asp'>
+              <img class = "Tool-logo" src = { require('./Photos/html.png') } alt = 'HTML'/>
+            </a>
+            <a href = 'https://en.wikipedia.org/wiki/C_(programming_language)'>
+              <img class = "Tool-logo" src = { require('./Photos/C.png') } alt = 'C'/>
+            </a>
+
           </div>
           <div class = "Tool-col-right">
-            <img class = "Tool-logo" src = { require('./Photos/Angular.png') } alt = 'Angularjs'/>
-            <img class = "Tool-logo" src = { require('./Photos/Arduino.jpg') } alt = 'Arduino'/>
-            <img class = "Tool-logo" src = { require('./Photos/ios.png') } alt = 'iOS'/>
-            <img class = "Tool-logo" src = { require('./Photos/android.png') } alt = 'Android'/>
+            <a href = 'https://www.java.com/en/'>
+              <img class = "Tool-logo" src = { require('./Photos/java.png') } alt = 'Java'/>
+            </a>
+            <a href = 'https://www.arduino.cc/'>
+              <img class = "Tool-logo" src = { require('./Photos/Arduino.jpg') } alt = 'Arduino'/>
+            </a>
+            <a href = 'https://www.apple.com/'>
+              <img class = "Tool-logo" src = { require('./Photos/ios.png') } alt = 'iOS'/>
+            </a>
+            <a href = 'https://www.android.com/'>
+              <img class = "Tool-logo" src = { require('./Photos/android.png') } alt = 'Android'/>
+            </a>
           </div>
         </div>
       </div>
@@ -205,10 +238,13 @@ class Contact extends Component {
           <h1 class = "Header-text">Find Me Online</h1>
           <div>
             <a class = "Findme-btn" href = 'https://github.com/theCaiGuy'>
-              <FontAwesomeIcon icon = {['fab', 'github']} size = '8x' color = '#97040E'/>
+              <FontAwesomeIcon icon = {['fab', 'github']} size = '7x' color = '#97040E'/>
             </a>
             <a class = "Findme-btn" href = 'https://linkedin.com/in/theCaiGuy'>
-              <FontAwesomeIcon icon = {['fab', 'linkedin']} size = '8x' color = '#97040E'/>
+              <FontAwesomeIcon icon = {['fab', 'linkedin']} size = '7x' color = '#97040E'/>
+            </a>
+            <a class = "Findme-btn" href = 'https://drive.google.com/file/d/19ZQJHzrvyQ_4T6cCHRUOFECuRAaKPZLr/view?usp=sharing'>
+              <FileIcon color = '#97040E' extension = 'PDF' size='88'/>
             </a>
           </div>
 
