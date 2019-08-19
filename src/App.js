@@ -36,7 +36,7 @@ class Introduction extends Component {
             at Stanford University, I have the privilege of
             learning about new ideas from the best and brightest minds in the
             field. Ultimately, I hope to use all I have learned to challenge old
-            ways of doing and build a better tomorrow.
+            ways of doing to upend the status quo and build a better tomorrow.
           </p>
         </div>
       </div>
