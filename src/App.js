@@ -3,10 +3,16 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import FileIcon from 'react-file-icon'
+import ReactGA from 'react-ga'
 
 import './App.css';
 
 library.add(fab)
+
+function initializeReactGA() {
+    ReactGA.initialize('UA-145906940-1');
+    ReactGA.pageview('/home');
+}
 
 class Welcome extends Component {
   render() {
@@ -287,6 +293,7 @@ class Footer extends Component {
 
 class App extends Component {
   render() {
+    initializeReactGA()
     return (
       <body>
         <Welcome/>
