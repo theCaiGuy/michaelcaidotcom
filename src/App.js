@@ -83,7 +83,19 @@ class Projects extends Component {
     return (
       <div class = "Section">
         <div class = "Qualifications">
-          <h1 class = "Header-text">Some Things I've Worked On</h1>
+          <h1 class = "Header-text">Some Projects I've Worked On</h1>
+
+          <div class = "Project-info">
+            <div class = "Project-logo-container">
+              <a href = "https://github.com/theCaiGuy/GANtor-Arts-Center"><img class = "Project-logo" src = { require('./Photos/Gantor.png')} alt = 'GANtor Arts Center'/></a>
+            </div>
+            <div class = "Project-info-container">
+              <p class = "Small-infotext">
+                <strong>GANtor Arts Center: </strong>
+                Designed and trained a multi-stage Generative Adversarial Network to conditionally generate high-resolution artwork from different genres based on the public WikiArt dataset.
+              </p>
+            </div>
+          </div>
 
           <div class = "Project-info">
             <div class = "Project-logo-container">
@@ -99,24 +111,24 @@ class Projects extends Component {
 
           <div class = "Project-info">
             <div class = "Project-logo-container">
-              <a href = "https://github.com/theCaiGuy/Twitter-Sentiment"><img class = "Project-logo" src = { require('./Photos/twitter.jpg')} alt = 'Twitter'/></a>
-            </div>
-            <div class = "Project-info-container">
-              <p class = "Small-infotext">
-                <strong>Twitter Sentiment Classifier: </strong>
-                Built a PyTorch CNN sentiment classifier based a paper published by Facebook AI. Trained the classifier on the Sentiment140 dataset using a CUDA GPU to classify Tweets.
-              </p>
-            </div>
-          </div>
-
-          <div class = "Project-info">
-            <div class = "Project-logo-container">
               <a href = "https://github.com/theCaiGuy/CS227B_GGP"><img class = "Project-logo" src = { require('./Photos/GGP-logo.png')} alt = 'GGP'/></a>
             </div>
             <div class = "Project-info-container">
               <p class = "Small-infotext">
                 <strong>General Game Player: </strong>
                 Utilized Monte Carlo Tree Search and Minimax techniques to teach a computer how to play any board game with no prior knowledge of the rules.
+              </p>
+            </div>
+          </div>
+
+          <div class = "Project-info">
+            <div class = "Project-logo-container">
+              <a href = "https://github.com/theCaiGuy/Twitter-Sentiment"><img class = "Project-logo" src = { require('./Photos/twitter.jpg')} alt = 'Twitter'/></a>
+            </div>
+            <div class = "Project-info-container">
+              <p class = "Small-infotext">
+                <strong>Twitter Sentiment Classifier: </strong>
+                Built a PyTorch CNN sentiment classifier based a paper published by Facebook AI. Trained the classifier on the Sentiment140 dataset using a CUDA GPU to classify Tweets.
               </p>
             </div>
           </div>
@@ -147,10 +159,10 @@ class Knowledge extends Component {
         <h1 class = "Header-text">My Toolbox</h1>
         <div class = "Tools">
           <div class = "Tool-col-left">
-            <img class = "Tool-logo" src = { require('./Photos/Pytorch.jpg') } alt = 'PyTorch'/>
-            <img class = "Tool-logo" src = { require('./Photos/ros.png') } alt = 'ROS'/>
-            <img class = "Tool-logo" src = { require('./Photos/tensorflow.png') } alt = 'TensorFlow'/>
             <img class = "Tool-logo" src = { require('./Photos/Python.png') } alt = 'Python'/>
+            <img class = "Tool-logo" src = { require('./Photos/Pytorch.jpg') } alt = 'PyTorch'/>
+            <img class = "Tool-logo" src = { require('./Photos/AWS.png') } alt = 'Amazon Web Services'/>
+            <img class = "Tool-logo" src = { require('./Photos/tensorflow.png') } alt = 'TensorFlow'/>
           </div>
           <div class = "Tool-col-right">
             <img class = "Tool-logo" src = { require('./Photos/javascript.png') } alt = 'Javascript'/>
@@ -164,10 +176,10 @@ class Knowledge extends Component {
             <img class = "Tool-logo" src = { require('./Photos/nodejs.png') } alt = 'Nodejs'/>
             <img class = "Tool-logo" src = { require('./Photos/html.png') } alt = 'HTML'/>
             <img class = "Tool-logo" src = { require('./Photos/C.png') } alt = 'C'/>
-            <img class = "Tool-logo" src = { require('./Photos/Angular.png') } alt = 'Angularjs'/>
+            <img class = "Tool-logo" src = { require('./Photos/ros.png') } alt = 'ROS'/>
           </div>
           <div class = "Tool-col-right">
-            <img class = "Tool-logo" src = { require('./Photos/AWS.png') } alt = 'Amazon Web Services'/>
+            <img class = "Tool-logo" src = { require('./Photos/Angular.png') } alt = 'Angularjs'/>
             <img class = "Tool-logo" src = { require('./Photos/Arduino.jpg') } alt = 'Arduino'/>
             <img class = "Tool-logo" src = { require('./Photos/ios.png') } alt = 'iOS'/>
             <img class = "Tool-logo" src = { require('./Photos/android.png') } alt = 'Android'/>
@@ -214,6 +226,7 @@ class Contact extends Component {
               <textarea id="subject" name="message" placeholder="Write something..." required></textarea>
 
               <input type="submit" value="Submit" />
+              <p class = "Footer-text"> Powered by <a href = "https://formspree.io/">Formspree</a></p>
 
             </form>
           </div>
@@ -228,7 +241,7 @@ class Footer extends Component {
     return (
       <div class = "Footer">
         <p class = "Footer-text">
-          This website was built using <a href = 'https://reactjs.org/'>React.js</a> and deployed using <a href = "https://heroku.com">Heroku</a> in Summer 2018.
+          This website was built using <a href = 'https://reactjs.org/'>React.js</a> and deployed using <a href = "https://heroku.com">Heroku</a> starting in Summer 2018.
           The source code for this site is available <a href = "https://github.com/theCaiGuy/michaelcaidotcom">here</a>.
         </p>
       </div>
