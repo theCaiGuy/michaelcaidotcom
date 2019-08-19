@@ -39,21 +39,37 @@ class Introduction extends Component {
   }
 }
 
+class Education extends Component {
+  render() {
+    return (
+      <div class = "Section">
+        <div class = "Qualifications">
+          <h1 class = "Header-text">Places I've Studied</h1>
+          <div class = "Work-col">
+            <img class = "Logo" src = { require('./Photos/stanford-logo.png') } alt = 'Stanford University'/>
+          </div>
+          <div class = "Learn-col">
+            <img class = "Logo" src = { require('./Photos/whs-logo.png') } alt = 'Wayzata High School'/>
+          </div>
+        </div>
+      </div>
+    )
+  }
+}
+
 class Qualifications extends Component {
   render() {
     return (
       <div class = "Section">
         <div class = "Qualifications">
+          <h1 class = "Header-text">Places I've Worked</h1>
           <div class = "Work-col">
-            <h1 class = "Header-text">Places I've Worked</h1>
-            <img class = "Logo" src = { require('./Photos/CivicFeed.png') } alt = 'CivicFeed'/>
+            <img class = "Logo" src = { require('./Photos/UnifyID.png') } alt = 'UnifyID'/>
             <img class = "Logo" src = { require('./Photos/boston-scientific-logo.png') } alt = 'Boston Scientific'/>
-            <img class = "Logo" src = { require('./Photos/medtronic-logo.jpg') } alt = 'Medtronic'/>
           </div>
           <div class = "Learn-col">
-            <h1 class = "Header-text">Places I've Studied</h1>
-            <img class = "Logo" src = { require('./Photos/stanford-logo.png') } alt = 'Stanford University'/>
-            <img class = "Logo" src = { require('./Photos/whs-logo.png') } alt = 'Wayzata High School'/>
+            <img class = "Logo" src = { require('./Photos/CivicFeed.png') } alt = 'CivicFeed'/>
+            <img class = "Logo" src = { require('./Photos/medtronic-logo.jpg') } alt = 'Medtronic'/>
           </div>
         </div>
         <div></div>
@@ -227,6 +243,7 @@ class App extends Component {
         <Welcome/>
         <Introduction/>
         <Qualifications/>
+        <Education/>
         <Projects/>
         <Knowledge/>
         <Contact/>
