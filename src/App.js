@@ -4,15 +4,63 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import FileIcon from 'react-file-icon'
 import ReactGA from 'react-ga'
+import Button from 'react-bootstrap/Button'
+import Modal from 'react-bootstrap/Modal'
 
 import './App.css';
 
 library.add(fab)
 
+
+class ModalTest extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      show: false
+    }
+  }
+
+  handleShow = () => {
+    this.setState({show: true})
+  }
+
+  handleClose = () => {
+    this.setState({show: false})
+  }
+
+  render() {
+    return (
+      <div>
+        <Button variant="primary" onClick={this.handleShow}>
+          Launch demo modal
+        </Button>
+
+        <Modal show={this.state.show} onHide={this.handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>Modal heading</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>Fuck! Yes!</Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={this.handleClose}>
+              Close
+            </Button>
+            <Button variant="primary" onClick={this.handleClose}>
+              Save Changes
+            </Button>
+          </Modal.Footer>
+        </Modal>
+      </div>
+    )
+  }
+}
+
+
+// Google Analytics
 function initializeReactGA() {
     ReactGA.initialize('UA-145906940-1');
     ReactGA.pageview('/home');
 }
+
 
 class Welcome extends Component {
   render() {
@@ -26,6 +74,7 @@ class Welcome extends Component {
   }
 }
 
+
 class Introduction extends Component {
   render() {
     return (
@@ -36,7 +85,7 @@ class Introduction extends Component {
             Four years ago, I was drawn to Silicon Valley by my passion for the future.
             Unsatisfied with the status quo, I yearned for the opportunity to
             work on the "next big thing". Since then, as a software engineer specializing
-            in Machine Learning Engineering, I have earned invaluable experience
+            in Machine Learning, I have earned invaluable experience
             with the full ML product realization pipeline. Meanwhile, as a Computer
             Science undergraduate with a focus in Artificial Intelligence
             at Stanford University, I have the privilege of
@@ -49,6 +98,7 @@ class Introduction extends Component {
     );
   }
 }
+
 
 class Qualifications extends Component {
   render() {
@@ -71,6 +121,7 @@ class Qualifications extends Component {
   }
 }
 
+
 class Education extends Component {
   render() {
     return (
@@ -83,6 +134,7 @@ class Education extends Component {
     )
   }
 }
+
 
 class Projects extends Component {
   render() {
@@ -129,7 +181,7 @@ class Projects extends Component {
 
           <div class = "Project-info">
             <div class = "Project-logo-container">
-              <a href = "https://github.com/theCaiGuy/Twitter-Sentiment"><img class = "Project-logo" src = { require('./Photos/twitter.jpg')} alt = 'Twitter'/></a>
+              <a href = "https://github.com/theCaiGuy/Twitter-Sentiment"><img class = "Project-logo" src = { require('./Photos/twitter.png')} alt = 'Twitter'/></a>
             </div>
             <div class = "Project-info-container">
               <p class = "Small-infotext">
@@ -157,6 +209,7 @@ class Projects extends Component {
     )
   }
 }
+
 
 class Knowledge extends Component {
   render() {
@@ -229,6 +282,7 @@ class Knowledge extends Component {
   }
 }
 
+
 class Contact extends Component {
   constructor(props) {
     super(props)
@@ -250,7 +304,7 @@ class Contact extends Component {
               <FontAwesomeIcon icon = {['fab', 'linkedin']} size = '7x' color = '#97040E'/>
             </a>
             <a class = "Findme-btn" href = 'https://drive.google.com/file/d/19ZQJHzrvyQ_4T6cCHRUOFECuRAaKPZLr/view?usp=sharing'>
-              <FileIcon color = '#97040E' extension = 'PDF' size='88'/>
+              <FontAwesomeIcon icon = {['fab', 'google-drive']} size = '7x' color = '#97040E'/>
             </a>
           </div>
 
@@ -278,6 +332,7 @@ class Contact extends Component {
   }
 }
 
+
 class Footer extends Component {
   render() {
     return (
@@ -291,11 +346,13 @@ class Footer extends Component {
   }
 }
 
+
 class App extends Component {
   render() {
     initializeReactGA()
     return (
       <body>
+        <ModalTest/>
         <Welcome/>
         <Introduction/>
         <Qualifications/>
@@ -308,5 +365,6 @@ class App extends Component {
     );
   }
 }
+
 
 export default App;

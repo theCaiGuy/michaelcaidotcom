@@ -341,14 +341,32 @@
   max-width: 90%;
   width: auto;
   height: auto;
+  margin: 5px;
+}
+
+.Logo:hover {
+  max-width: 90%;
+  width: auto;
+  height: auto;
+  border: 2px solid #97040E;
+  border-radius: 15px;
+  margin: 3px;
 }
 
 .Project-logo {
   max-width: 100%;
   width: auto;
   height: auto;
-  border: 5px solid #97040E;
+  margin: 2px;
   border-radius: 50%;
+}
+
+.Project-logo:hover {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid #97040E;
 }
 
 .Project-info {
