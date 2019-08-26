@@ -29,12 +29,14 @@
     font-size: 60px;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
+    margin: 10px;
   }
 
   .Top-infotext {
     color: white;
     font-size: 30px;
     font-family: 'Source Sans Pro', sans-serif;
+    margin: 10px;
   }
 
   .Header-text {
@@ -42,6 +44,7 @@
     font-size: 35px;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: normal;
+    margin-bottom: 5px;
   }
 
   .Introduction {
@@ -200,12 +203,14 @@
     font-size: 80px;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
+    margin: 10px;
   }
 
   .Top-infotext {
     color: white;
     font-size: 40px;
     font-family: 'Source Sans Pro', sans-serif;
+    margin: 10px;
   }
 
   .Header-text {
@@ -213,6 +218,7 @@
     font-size: 40px;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: normal;
+    margin-bottom: 5px;
   }
 
   .Introduction {
@@ -338,19 +344,22 @@
 }
 
 .Logo {
-  max-width: 90%;
+  max-width: 100%;
   width: auto;
-  height: auto;
-  margin: 5px;
+  height: fixed;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  cursor: pointer;
 }
 
 .Logo:hover {
-  max-width: 90%;
+  max-width: 100%;
   width: auto;
-  height: auto;
+  height: fixed;
   border: 2px solid #97040E;
   border-radius: 15px;
-  margin: 3px;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 .Project-logo {
@@ -390,6 +399,10 @@
 .Footer-text {
   color: #676767;
   font-size: 15px
+}
+
+.Logo-modal {
+  width: 100%;
 }
 
 body {

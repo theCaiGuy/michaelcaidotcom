@@ -2,57 +2,12 @@ import React, { Component } from 'react';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import FileIcon from 'react-file-icon'
 import ReactGA from 'react-ga'
-import Button from 'react-bootstrap/Button'
 import Modal from 'react-bootstrap/Modal'
 
 import './App.css';
 
 library.add(fab)
-
-
-class ModalTest extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      show: false
-    }
-  }
-
-  handleShow = () => {
-    this.setState({show: true})
-  }
-
-  handleClose = () => {
-    this.setState({show: false})
-  }
-
-  render() {
-    return (
-      <div>
-        <Button variant="primary" onClick={this.handleShow}>
-          Launch demo modal
-        </Button>
-
-        <Modal show={this.state.show} onHide={this.handleClose}>
-          <Modal.Header closeButton>
-            <Modal.Title>Modal heading</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>Fuck! Yes!</Modal.Body>
-          <Modal.Footer>
-            <Button variant="secondary" onClick={this.handleClose}>
-              Close
-            </Button>
-            <Button variant="primary" onClick={this.handleClose}>
-              Save Changes
-            </Button>
-          </Modal.Footer>
-        </Modal>
-      </div>
-    )
-  }
-}
 
 
 // Google Analytics
@@ -101,21 +56,107 @@ class Introduction extends Component {
 
 
 class Qualifications extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      show_unifyid: false,
+      show_civicfeed: false,
+      show_bsci: false,
+      show_medtronic: false
+    }
+  }
+
+  handle_show_unifyid = () => {
+    this.setState({show_unifyid: true})
+  }
+
+  handle_hide_unifyid = () => {
+    this.setState({show_unifyid: false})
+  }
+
+  handle_show_civicfeed = () => {
+    this.setState({show_civicfeed: true})
+  }
+
+  handle_hide_civicfeed = () => {
+    this.setState({show_civicfeed: false})
+  }
+
+  handle_show_bsci = () => {
+    this.setState({show_bsci: true})
+  }
+
+  handle_hide_bsci = () => {
+    this.setState({show_bsci: false})
+  }
+
+  handle_show_medtronic = () => {
+    this.setState({show_medtronic: true})
+  }
+
+  handle_hide_medtronic = () => {
+    this.setState({show_medtronic: false})
+  }
+
   render() {
     return (
       <div class = "Section">
         <div class = "Qualifications">
           <h1 class = "Header-text">Places I've Worked</h1>
           <div class = "Work-col">
-            <img class = "Logo" src = { require('./Photos/UnifyID.png') } alt = 'UnifyID'/>
-            <img class = "Logo" src = { require('./Photos/boston-scientific-logo.png') } alt = 'Boston Scientific'/>
+            <img class = "Logo" src = { require('./Photos/UnifyID.png') } alt = 'UnifyID' onClick = {this.handle_show_unifyid}/>
+            <img class = "Logo" src = { require('./Photos/boston-scientific-logo.png') } alt = 'Boston Scientific' onClick = {this.handle_show_bsci}/>
           </div>
           <div class = "Learn-col">
-            <img class = "Logo" src = { require('./Photos/CivicFeed.png') } alt = 'CivicFeed'/>
-            <img class = "Logo" src = { require('./Photos/medtronic-logo.jpg') } alt = 'Medtronic'/>
+            <img class = "Logo" src = { require('./Photos/CivicFeed.png') } alt = 'CivicFeed' onClick = {this.handle_show_civicfeed}/>
+            <img class = "Logo" src = { require('./Photos/medtronic-logo.jpg') } alt = 'Medtronic' onClick = {this.handle_show_medtronic}/>
           </div>
         </div>
         <div></div>
+
+        <Modal size="xl" show={this.state.show_unifyid} onHide={this.handle_hide_unifyid}>
+          <Modal.Header closeButton>
+            <Modal.Title>Machine Learning Engineering Intern - UnifyID</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <p>
+              During summer of 2019, I accepted an internship at UnifyID, a Series A startup building biometric-based passive authentication software in Redwood City, California.
+              This internship was one of the greatest learning experiences of my short career:
+              I had the opportunity to work on a variety of projects ranging from backend infrastructure to client-side app development to bluetooth/IoT programming.
+            </p>
+            <p>
+              For my primary project at UnifyID, I worked closely with the company's machine learning engineering team to gather real-world usage data and build simulations designed to measure the performance of our product in a variety of different scenarios.
+              My project required me to learn how to write stable, maintainable, production-quality Python code while also providing me a crash course on industry-grade machine learning infrastructure and development techniques.
+              My work would soon become critical to the company's decision making process, both for determining which models to ship to customers, and for identifying and triaging weaknesses in our product.
+            </p>
+            <p>
+              Ultimately, working at UnifyID gave me an in-depth look at all the different functions necessary to turn cutting-edge machine learning research into a winning product.
+              This internship will surely go down as one of the coolest job experiences I have ever had.
+            </p>
+          </Modal.Body>
+        </Modal>
+
+        <Modal size="xl" show={this.state.show_civicfeed} onHide={this.handle_hide_civicfeed}>
+          <Modal.Header closeButton>
+            <Modal.Title>Part Time Software Engineer - CivicFeed</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>Section pending</Modal.Body>
+        </Modal>
+
+        <Modal size="xl" show={this.state.show_bsci} onHide={this.handle_hide_bsci}>
+          <Modal.Header closeButton>
+            <Modal.Title>Software Engineering Intern - Boston Scientific</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>Section pending</Modal.Body>
+        </Modal>
+
+        <Modal size="xl" show={this.state.show_medtronic} onHide={this.handle_hide_medtronic}>
+          <Modal.Header closeButton>
+            <Modal.Title>Materials Science Intern - Medtronic</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>Section pending</Modal.Body>
+        </Modal>
+
       </div>
     );
   }
@@ -123,13 +164,36 @@ class Qualifications extends Component {
 
 
 class Education extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      show_stanford: false,
+    }
+  }
+
+  handle_show_stanford = () => {
+    this.setState({show_stanford: true})
+  }
+
+  handle_hide_stanford = () => {
+    this.setState({show_stanford: false})
+  }
+
   render() {
     return (
       <div class = "Section">
         <div class = "Qualifications">
           <h1 class = "Header-text">My Education</h1>
-          <img class = "Logo" src = { require('./Photos/stanford-logo.png') } alt = 'Stanford University'/>
+          <img class = "Logo" src = { require('./Photos/stanford-logo.png') } alt = 'Stanford University' onClick = {this.handle_show_stanford}/>
         </div>
+
+        <Modal size="xl" show={this.state.show_stanford} onHide={this.handle_hide_stanford}>
+          <Modal.Header closeButton>
+            <Modal.Title>B.S. in Computer Science - Stanford University</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>Section pending</Modal.Body>
+        </Modal>
+
       </div>
     )
   }
@@ -338,7 +402,7 @@ class Footer extends Component {
     return (
       <div class = "Footer">
         <p class = "Footer-text">
-          This website was built using <a href = 'https://reactjs.org/'>React.js</a> and deployed using <a href = "https://heroku.com">Heroku</a> starting in Summer 2018.
+          This website was built using <a href = 'https://reactjs.org/'>React.js</a> and deployed using <a href = "https://heroku.com">Heroku</a>.
           The source code for this site is available <a href = "https://github.com/theCaiGuy/michaelcaidotcom">here</a>.
         </p>
       </div>
@@ -352,7 +416,6 @@ class App extends Component {
     initializeReactGA()
     return (
       <body>
-        <ModalTest/>
         <Welcome/>
         <Introduction/>
         <Qualifications/>
