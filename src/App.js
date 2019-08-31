@@ -122,16 +122,16 @@ class Qualifications extends Component {
             <p>
               During summer of 2019, I accepted an internship at UnifyID, a Series A startup building biometric-based passive authentication software in Redwood City, California.
               This internship was one of the greatest learning experiences of my short career:
-              I had the opportunity to work on a variety of projects ranging from backend infrastructure to client-side app development to bluetooth/IoT programming.
+              At UnifyID, I had the opportunity to work on a variety of projects ranging from backend infrastructure to client-side app development to bluetooth/IoT programming.
             </p>
             <p>
               For my primary project at UnifyID, I worked closely with the company's machine learning engineering team to gather real-world usage data and build simulations designed to measure the performance of our product in a variety of different scenarios.
               My project required me to learn how to write stable, maintainable, production-quality Python code while also providing me a crash course on industry-grade machine learning infrastructure and development techniques.
-              My work would soon become critical to the company's decision making process, both for determining which models to ship to customers, and for identifying and triaging weaknesses in our product.
+              The project would become an essential part of our product development pipeline, both for determining if a new model is working effectively enough to ship to customers, and for identifying and triaging weaknesses in our product.
             </p>
             <p>
-              Ultimately, working at UnifyID gave me an in-depth look at all the different functions necessary to turn cutting-edge machine learning research into a winning product.
-              This internship will surely go down as one of the coolest job experiences I have ever had.
+              Ultimately, working at UnifyID gave me an in-depth look at all the different functions necessary build a company and a product around cutting edge machine learning research.
+              I feel incredibly honored to have had such an opportunity at an exciting young company.
             </p>
           </Modal.Body>
         </Modal>
@@ -140,21 +140,51 @@ class Qualifications extends Component {
           <Modal.Header closeButton>
             <Modal.Title>Part Time Software Engineer - CivicFeed</Modal.Title>
           </Modal.Header>
-          <Modal.Body>Section pending</Modal.Body>
+          <Modal.Body>
+            <p>
+              Starting in February of 2019, I began remotely working part time for CivicFeed, a seed-round startup focused on media monitoring to connect journalists, influencers, and political organizations.
+              At CivicFeed, I have worked on all parts of the stack, from improving React JS user interfaces on their website, to cleaning data in their Postgres database, to building Node JS APIs to link it all together.
+              My work at CivicFeed has enabled me to experience a startup in its formative years, bearing the responsibility that each of my decisions will directly influence the direction of the company.
+              Overall, working at CivicFeed has been an exceptionally rare opportunity to build something completely new out of nothing.
+            </p>
+          </Modal.Body>
         </Modal>
 
         <Modal size="xl" show={this.state.show_bsci} onHide={this.handle_hide_bsci}>
           <Modal.Header closeButton>
             <Modal.Title>Software Engineering Intern - Boston Scientific</Modal.Title>
           </Modal.Header>
-          <Modal.Body>Section pending</Modal.Body>
+          <Modal.Body>
+            <p>
+              My internship at Boston Scientific in summer of 2018 was my first ever industry-level software internship.
+              At Boston Scientific, I worked on a team building mobile applications for interfacing with implanted medical devices in order to determine the health of implanted devices without the need for a doctor's intervention.
+              I spent my summer learning how to build robust, stable, medical-grade software products to always function at an extremely high standard while also protecting the user's data privacy according to very strict regulations.
+            </p>
+            <p>
+              Under the tutelage of a senior software architect, I worked on a project exploring the effectiveness and use cases of cloud-based mobile device farms for improving turnaround time and reducing costs for mobile app development.
+              As part of my proof-of-concept, I also successfully proved the effectiveness of leveraging React Native to build simple and stable cross-platform mobile applications,
+              while also assisting with a proof-of-concept for a new GraphQL API being built to securely expose patient databases to doctors.
+              This internship was an important internship experience because, not only did I learn about many of the tools needed to build successful software products in industry,
+              I also gained valuable experience learning about agile software development ideas for developing new software on a massive scale.
+            </p>
+          </Modal.Body>
         </Modal>
 
         <Modal size="xl" show={this.state.show_medtronic} onHide={this.handle_hide_medtronic}>
           <Modal.Header closeButton>
             <Modal.Title>Materials Science Intern - Medtronic</Modal.Title>
           </Modal.Header>
-          <Modal.Body>Section pending</Modal.Body>
+          <Modal.Body>
+            <p>
+              In summer of 2017, I worked on a team developing glucose sensors for diabetic patients at Medtronic.
+              While I would ultimately decide to change career paths to pursue computer science rather than materials science, this internship was still a very valuable experience on an industry-level engineering team.
+            </p>
+            <p>
+              At Medtronic, I was tasked with exploring different electrically conductive candidate materials to be used to construct a next-generation glucose sensor.
+              I collected data and compared a number of materials based on properties like conductivity, sensitivity, stability, and surface area.
+              In my internship, I learned about the rigor and precision professional engineering teams use to build cutting-edge products while also gaining an opportunity to make an impact on a team building life-changing devices.
+            </p>
+          </Modal.Body>
         </Modal>
 
       </div>
@@ -191,7 +221,18 @@ class Education extends Component {
           <Modal.Header closeButton>
             <Modal.Title>B.S. in Computer Science - Stanford University</Modal.Title>
           </Modal.Header>
-          <Modal.Body>Section pending</Modal.Body>
+          <Modal.Body>
+            <p>
+              I am a senior majoring in Computer Science with a concentration in Artificial Intelligence at Stanford University.
+              My coursework at Stanford has included a comprehensive education in machine learning methods, computer vision, natural language processing, deep learning, and robotic autonomy,
+              while also including classes in systems programming, statistics, computer theory, and embedded programming.
+            </p>
+            <p>
+              Outside of coursework, I am involved with the Stanford Band. I was the section lead for the Alto Saxophone section in 2018
+              - a group I scaled from less than 10 members to over 20, and am currently serving as one of the "Librarianz" (aka music curators) for 2019.
+              In addition, I also attended Stanford's Treehacks hackathon in 2017 and 2018.
+            </p>
+          </Modal.Body>
         </Modal>
 
       </div>
